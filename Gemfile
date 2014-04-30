@@ -22,6 +22,7 @@ group :development, :test do
 	gem 'pg'
 	gem 'rails_12factor'
 	gem 'unicorn'
+	gem 'kgio'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
