@@ -5,7 +5,8 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: sqlite3
+  adapter: postgresql
+  encoding: unicode
   pool: 5
 
 development:
@@ -20,7 +21,8 @@ test:
   database: db/test.sqlite3
 
 production:
+  <<: *default
   adapter: postgresql
   pool: 5
   encoding: unicode
-  # database: db/production.pg
+  database: pinteresting_production
